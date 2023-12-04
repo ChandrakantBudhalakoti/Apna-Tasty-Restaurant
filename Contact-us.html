@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <!--========== CSS ==========-->
     <link rel="stylesheet" href="Contact-us.css" />
 
     <!--========== FAVICON ==========-->
@@ -23,7 +24,8 @@
     />
     <link rel="manifest" href="/favicon/site.webmanifest" />
 
-    <!-- Bootstrap CSS -->
+    <!--========== Bootstrap CSS ==========-->
+
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
@@ -31,11 +33,10 @@
     <title>Apna Tasty Restaurant</title>
   </head>
   <body>
-    <div class="container form-container">
+    <div class="container form-container" style="width: 500px">
       <form
         id="contactForm"
         method="post"
-        novalidate
         onsubmit="emailSend(); reset(); return false;"
       >
         <div class="form-group">
@@ -95,6 +96,8 @@
     <script src="https://smtpjs.com/v3/smtp.js"></script>
     <!-- ========== sweetalert (popup msg)  ========== -->
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <!-- Add this script tag for validator.js -->
+    <script src="https://cdn.jsdelivr.net/npm/validator@13.10.0"></script>
     <script src="Contact-us.js"></script>
   </body>
 </html>
